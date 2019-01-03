@@ -11,6 +11,18 @@
     cursor: pointer;
 }
 
+.main-product .status-sell {
+    color: green;
+}
+
+.main-product .status-sold {
+    color: red;
+}
+
+.main-product .status-not-sell {
+    color: #000;
+}
+
 .chanel-short-info {
     padding: 5px;
     font-size: 12px;
@@ -47,5 +59,9 @@
 .bold-value {
     font-size: 14px;
     font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+.currency {
     text-decoration: underline;
 }

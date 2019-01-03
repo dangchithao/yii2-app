@@ -126,7 +126,7 @@ $this->registerCssFile('@web/css/template1.css');
 </div>
 
 <div class="row" style="margin-top: 30px;">
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi01.jpg" alt="..." class="img-responsive center-block">
@@ -156,17 +156,17 @@ $this->registerCssFile('@web/css/template1.css');
                 </p>
                 <p>
                     <span class="bold-label">Giá:</span>
-                    <span class="bold-value">3.000đ</span>
+                    <span class="bold-value">3.000.000 <span class="currency">đ<span></span>
                 </p>
 
                 <p>
                     <span class="bold-label">Trạng thái:</span>
-                    <span class="bold-value">Đã bán</span>
+                    <span class="bold-value status-sold">Đã bán</span>
                 </p>
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi02.jpg" alt="..." class="img-responsive center-block">
@@ -177,7 +177,7 @@ $this->registerCssFile('@web/css/template1.css');
             <div class="chanel-short-info">
                 <p>
                     <span class="bold-label">Trạng cân:</span>
-                    <span class="bold-value">3.0</span>
+                    <span class="bold-value">2.7</span>
                 </p>
                 <p>
                     <span class="bold-label">Thành tích:</span>
@@ -196,113 +196,611 @@ $this->registerCssFile('@web/css/template1.css');
                 </p>
                 <p>
                     <span class="bold-label">Giá:</span>
-                    <span class="bold-value">3.000đ</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
                 </p>
                 <p>
                     <span class="bold-label">Trạng thái:</span>
-                    <span class="bold-value">Chưa bán</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi03.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi04.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi01.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">3.0</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">3.000.000 <span class="currency">đ<span></span>
+                </p>
+
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sold">Đã bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi02.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi03.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi04.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-top: 30px;">
+    <div class="col-md-3">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi05.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
                 </p>
             </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi03.jpg" alt="..." class="img-responsive center-block">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi06.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi04.jpg" alt="..." class="img-responsive center-block">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi07.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi08.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
         </div>
     </div>
 </div>
 
-
 <div class="row" style="margin-top: 30px;">
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi05.jpg" alt="..." class="img-responsive center-block">
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi06.jpg" alt="..." class="img-responsive center-block">
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi07.jpg" alt="..." class="img-responsive center-block">
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi08.jpg" alt="..." class="img-responsive center-block">
-        </div>
-    </div>
-</div>
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi09.jpg" alt="..." class="img-responsive center-block">
+            </div>
 
-<div class="row" style="margin-top: 30px;">
-    <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi09.jpg" alt="..." class="img-responsive center-block">
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi10.jpg" alt="..." class="img-responsive center-block">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi10.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi11.jpg" alt="..." class="img-responsive center-block">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi11.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi12.jpg" alt="..." class="img-responsive center-block">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi12.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">2.7</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">1.500.000 <span class="currency">đ</span></span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value status-sell">Chưa bán</span>
+                </p>
+            </div>
         </div>
     </div>
 </div>
 
 <script src="./js/extention/choices.js"></script>
 <script>
-    const customSelects = document.querySelectorAll("select");
-    const deleteBtn = document.getElementById('delete');
-    const choices = new Choices(
-        'select',
-        {
-            searchEnabled: false,
-            removeItemButton: true,
-            itemSelectText: '',
-        }
-    );
-
-    for (let i = 0; i < customSelects.length; i++) {
-        customSelects[i].addEventListener(
-            'addItem',
-            function(event) {
-                if (event.detail.value) {
-                    let parent = this.parentNode.parentNode;
-
-                    parent.classList.add('valid');
-                    parent.classList.remove('invalid');
-                } else {
-                    let parent = this.parentNode.parentNode;
-                    parent.classList.add('invalid');
-                    parent.classList.remove('valid');
-                }
-            },
-            false
+        const customSelects = document.querySelectorAll("select");
+        const deleteBtn = document.getElementById('delete');
+        const choices = new Choices(
+            'select',
+            {
+                searchEnabled: false,
+                removeItemButton: true,
+                itemSelectText: '',
+            }
         );
-    }
 
-    deleteBtn.addEventListener("click", function(e) {
-        e.preventDefault();
+        for (let i = 0; i < customSelects.length; i++) {
+            customSelects[i].addEventListener(
+                'addItem',
+                function(event) {
+                    if (event.detail.value) {
+                        let parent = this.parentNode.parentNode;
 
-        const deleteAll = document.querySelectorAll('.choices__button');
-
-        for (let i = 0; i < deleteAll.length; i++) {
-            deleteAll[i].click();
+                        parent.classList.add('valid');
+                        parent.classList.remove('invalid');
+                    } else {
+                        let parent = this.parentNode.parentNode;
+                        parent.classList.add('invalid');
+                        parent.classList.remove('valid');
+                    }
+                },
+                false
+            );
         }
-    });
+
+        deleteBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            const deleteAll = document.querySelectorAll('.choices__button');
+
+            for (let i = 0; i < deleteAll.length; i++) {
+                deleteAll[i].click();
+            }
+        });
 </script>
