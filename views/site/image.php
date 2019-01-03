@@ -127,13 +127,82 @@ $this->registerCssFile('@web/css/template1.css');
 
 <div class="row" style="margin-top: 30px;">
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi01.jpg" alt="..." class="img-responsive center-block">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi01.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">3.0</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                    $random = rand(1, 10);
+
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($i <= $random) {
+                            echo '<span class="fa fa-star checked"></span>&nbsp;';
+                        } else {
+                            echo '<span class="fa fa-star"></span>&nbsp;';
+                        }
+                    }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">3.000đ</span>
+                </p>
+
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value">Đã bán</span>
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="chanel-image center-block">
-            <img src="./img/gachoi02.jpg" alt="..." class="img-responsive center-block">
+        <div class="main-product">
+            <div class="chanel-image center-block">
+                <img src="./img/gachoi02.jpg" alt="..." class="img-responsive center-block">
+            </div>
+
+            <hr>
+
+            <div class="chanel-short-info">
+                <p>
+                    <span class="bold-label">Trạng cân:</span>
+                    <span class="bold-value">3.0</span>
+                </p>
+                <p>
+                    <span class="bold-label">Thành tích:</span>
+
+                    <?php
+                        $random = rand(1, 10);
+
+                        for ($i = 1; $i <= 10; $i++) {
+                            if ($i <= $random) {
+                                echo '<span class="fa fa-star checked"></span>&nbsp;';
+                            } else {
+                                echo '<span class="fa fa-star"></span>&nbsp;';
+                            }
+                        }
+                    ?>
+                </p>
+                <p>
+                    <span class="bold-label">Giá:</span>
+                    <span class="bold-value">3.000đ</span>
+                </p>
+                <p>
+                    <span class="bold-label">Trạng thái:</span>
+                    <span class="bold-value">Chưa bán</span>
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-md-3">
