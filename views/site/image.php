@@ -6,6 +6,7 @@ use yii\helpers\Html;
 
 $this->title = 'Images';
 $this->params['breadcrumbs'][] = $this->title;
+$this->registerCssFile('@web/css/main.css');
 $this->registerCssFile('@web/css/image.css');
 $this->registerCssFile('@web/css/template1.css');
 ?>
@@ -125,8 +126,8 @@ $this->registerCssFile('@web/css/template1.css');
     </form>
 </div>
 
-<div class="row" style="margin-top: 30px;">
-    <div class="col-md-3 col-sm-6 col-xs-12">
+<div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi01.jpg" alt="..." class="img-responsive center-block">
@@ -166,7 +167,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi02.jpg" alt="..." class="img-responsive center-block">
@@ -205,7 +206,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi03.jpg" alt="..." class="img-responsive center-block">
@@ -244,7 +245,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi04.jpg" alt="..." class="img-responsive center-block">
@@ -284,7 +285,7 @@ $this->registerCssFile('@web/css/template1.css');
         </div>
     </div>
 
-    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi01.jpg" alt="..." class="img-responsive center-block">
@@ -324,7 +325,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi02.jpg" alt="..." class="img-responsive center-block">
@@ -363,7 +364,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi03.jpg" alt="..." class="img-responsive center-block">
@@ -402,7 +403,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi04.jpg" alt="..." class="img-responsive center-block">
@@ -441,11 +442,8 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-</div>
 
-
-<div class="row" style="margin-top: 30px;">
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi05.jpg" alt="..." class="img-responsive center-block">
@@ -484,7 +482,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi06.jpg" alt="..." class="img-responsive center-block">
@@ -523,7 +521,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi07.jpg" alt="..." class="img-responsive center-block">
@@ -562,7 +560,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi08.jpg" alt="..." class="img-responsive center-block">
@@ -601,10 +599,8 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-</div>
 
-<div class="row" style="margin-top: 30px;">
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi09.jpg" alt="..." class="img-responsive center-block">
@@ -643,7 +639,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi10.jpg" alt="..." class="img-responsive center-block">
@@ -682,7 +678,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi11.jpg" alt="..." class="img-responsive center-block">
@@ -721,7 +717,7 @@ $this->registerCssFile('@web/css/template1.css');
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6 col-xs-12 layout-custom">
         <div class="main-product">
             <div class="chanel-image center-block">
                 <img src="./img/gachoi12.jpg" alt="..." class="img-responsive center-block">

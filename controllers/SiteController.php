@@ -2,8 +2,11 @@
 
 namespace app\controllers;
 
+use app\models\Chicken;
 use app\models\UploadForm;
+use app\repositories\interfaces\ChickenRepositoryInterface;
 use Yii;
+use yii\base\Module;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
@@ -14,6 +17,11 @@ use yii\web\UploadedFile;
 
 class SiteController extends Controller
 {
+    /**
+     * @var ChickenRepositoryInterface
+     */
+    private $chickenRepository;
+
     /**
      * {@inheritdoc}
      */
@@ -56,6 +64,17 @@ class SiteController extends Controller
         ];
     }
 
+    public function __construct(
+        string $id,
+        Module $module,
+        ChickenRepositoryInterface $chickenRepository,
+        array $config = []
+    ) {
+        parent::__construct($id, $module, $config);
+
+        $this->chickenRepository = $chickenRepository;
+    }
+
     /**
      * Displays homepage.
      *
@@ -63,6 +82,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        var_dump($this->chickenRepository->findChickens());
+
         return $this->render('index');
     }
 
