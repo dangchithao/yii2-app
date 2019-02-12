@@ -2,14 +2,13 @@
 
 namespace app\controllers;
 
-use app\models\Chicken;
 use app\models\patterns\ShapeFactory;
 use app\models\patterns\ShapeStrategy;
 use app\models\patterns\Singleton;
 use app\models\shapes\strategies\HubSpot;
 use app\models\shapes\strategies\SendGrid;
 use app\models\UploadForm;
-use app\repositories\interfaces\ChickenRepositoryInterface;
+use app\services\ChickenService;
 use Yii;
 use yii\base\Module;
 use yii\filters\AccessControl;
@@ -23,9 +22,9 @@ use yii\web\UploadedFile;
 class SiteController extends Controller
 {
     /**
-     * @var ChickenRepositoryInterface
+     * @var ChickenService
      */
-    private $chickenRepository;
+    private $chickenService;
 
     /**
      * {@inheritdoc}
@@ -69,15 +68,23 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * SiteController constructor.
+     *
+     * @param string $id
+     * @param Module $module
+     * @param ChickenService $chickenService
+     * @param array $config
+     */
     public function __construct(
         string $id,
         Module $module,
-        ChickenRepositoryInterface $chickenRepository,
+        ChickenService $chickenService,
         array $config = []
     ) {
         parent::__construct($id, $module, $config);
 
-        $this->chickenRepository = $chickenRepository;
+        $this->chickenService = $chickenService;
     }
 
     /**
@@ -87,7 +94,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        var_dump($this->chickenRepository->findChickens());
+        var_dump($this->chickenService->findAllChicken());
 
         return $this->render('index');
     }

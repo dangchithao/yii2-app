@@ -9,5 +9,5 @@ interface ChickenRepositoryInterface
     /**
      * @return Chicken[]
      */
-    public function findChickens();
+    public function findAllChicken();
 }

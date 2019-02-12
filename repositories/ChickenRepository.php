@@ -9,7 +9,7 @@ class ChickenRepository extends BaseRepository implements ChickenRepositoryInter
     /**
      * @inheritdoc
      */
-    public function findChickens()
+    public function findAllChicken()
     {
         return $this->model->find()->all();
     }
