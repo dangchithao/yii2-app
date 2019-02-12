@@ -18,6 +18,8 @@ class m190211_141205_chicken extends Migration
             'color_id' => $this->integer()->notNull(),
             'image_cover' => $this->string(100)->notNull(),
             'weight' => $this->float()->notNull(),
+            'trophy' => $this->integer()->defaultValue(0),
+            'status' => $this->integer()->notNull(),
             'description' => $this->text(),
             'created' => $this->dateTime()->defaultExpression('now()'),
             'modified' => $this->dateTime()->defaultExpression('now()')

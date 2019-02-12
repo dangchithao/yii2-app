@@ -94,8 +94,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        var_dump($this->chickenService->findAllChicken());
-
         return $this->render('index');
     }
 
@@ -185,7 +183,9 @@ class SiteController extends Controller
 
     public function actionImage()
     {
-        return $this->render('image');
+        return $this->render('image', [
+            'chickens' => $this->chickenService->findAllChicken()
+        ]);
     }
 
     public function actionUpload()

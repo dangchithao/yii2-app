@@ -13,6 +13,8 @@ use yii\db\ActiveRecord;
  * @property integer $color_id
  * @property string $image_cover
  * @property float $weight
+ * @property integer $trophy
+ * @property integer $status
  * @property string $description
  * @property string $created
  * @property string $modified
@@ -21,6 +23,9 @@ use yii\db\ActiveRecord;
  */
 class Chicken extends ActiveRecord
 {
+    const STATUS_SELL = 0;
+    const STATUS_SOLD = 1;
+
     /**
      * @inheritdoc
      */
@@ -35,8 +40,8 @@ class Chicken extends ActiveRecord
     public function rules()
     {
         return [
-            [['age_id', 'color_id'], 'require'],
-            [['age_id', 'color_id'], 'integer'],
+            [['age_id', 'color_id', 'status'], 'require'],
+            [['age_id', 'color_id', 'trophy'], 'integer'],
             [['image_cover'], 'string', 'max' => 100],
             [['weight'], 'number'],
             [['description'], 'string'],
@@ -44,6 +49,8 @@ class Chicken extends ActiveRecord
     }
 
     /**
+     * @todo need to defined later
+     *
      * @inheritdoc
      */
     public function attributeLabels()
