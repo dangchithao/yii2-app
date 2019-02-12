@@ -876,7 +876,8 @@ legend {
   height: 40px;
   padding: 0 15px;
   /*background: #57b846;*/
-  background-color: #fa4251;
+  /*background-color: #fa4251;*/
+  background-color: #57b846;;
   white-space: nowrap;
   border-radius: 3px;
   font-size: 14px;
@@ -888,7 +889,7 @@ legend {
 }
 
 .s007 form .inner-form .input-field .btn-search:hover {
-  background: #4ea63f;
+  /*background: #4ea63f;*/
 }
 
 .s007 form .inner-form .input-field .btn-delete {

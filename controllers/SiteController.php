@@ -3,6 +3,11 @@
 namespace app\controllers;
 
 use app\models\Chicken;
+use app\models\patterns\ShapeFactory;
+use app\models\patterns\ShapeStrategy;
+use app\models\patterns\Singleton;
+use app\models\shapes\strategies\HubSpot;
+use app\models\shapes\strategies\SendGrid;
 use app\models\UploadForm;
 use app\repositories\interfaces\ChickenRepositoryInterface;
 use Yii;
@@ -146,7 +151,29 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        $this->layout = 'chicken';
+
+        $shape = ShapeFactory::getShape('SQUARE');
+
+        $circle1 = Singleton::getSingletonShapeCircle();
+        echo $circle1->draw();
+        $circle2 = Singleton::getSingletonShapeCircle();
+        echo '2: ' . $circle2->draw();
+
+        // product environment will be send via SendGrid
+        $sendGrid = new ShapeStrategy(new SendGrid());
+
+        echo $sendGrid->send();
+
+        // develop environment will be send via HubSpot
+        $hubSpot = new ShapeStrategy(new HubSpot());
+
+        echo $hubSpot->send();
+
+
+        return $this->render('about', [
+            'shape' => $shape->draw(),
+        ]);
     }
 
     public function actionImage()
