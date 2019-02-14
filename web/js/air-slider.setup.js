@@ -1,5 +1,4 @@
 var slider = new airSlider({
-    autoPlay: true,
-    width: '600px',
-    height: '300px'
+    autoPlay: false,
+    height: '400px'
 });
